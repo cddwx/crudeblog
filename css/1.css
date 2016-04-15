@@ -1,0 +1,749 @@
+/*******************************************************************************
+ * File:
+ *
+ * Description: 
+ *    A style.
+ *
+ *    body
+ *     \__container
+ *         \__header
+ *             \__header_content
+ *         \__side
+ *             \__side_nav
+ *         \__main
+ *             \__main_content
+ *                 \__welcome || article_list || post || write ||
+ *         \__footer
+ *             \__footer_content
+ *
+ * Date:
+ *         
+ * Version:     1.0
+ ******************************************************************************/ 
+
+* 
+{
+        /*
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        */
+}
+
+body
+{
+        /*
+        color: #FFFFFF;
+        background-color: #000000;
+        */
+        color: #000000;
+        background-color: #FFFFFF;
+        font-family: serif;
+        font-size: 14px;
+        margin: 0px;
+        padding: 0px;
+}
+
+/* 未被访问的链接 */
+a:link
+{
+        /*
+        color: #00FFFF;
+        background-color: #000000;
+        */
+        color: blue;
+        text-decoration: none;
+}
+
+/* 鼠标指针移动到链接上 */
+a:hover
+{
+        /*
+        color: #00FFFF;
+        background-color: #000000;
+        */
+        color: blue;
+        text-decoration: underline;
+}
+
+/* 正在被点击的链接 */
+a:active
+{
+        /*
+        color: #00FFFF;
+        background-color: #000000;
+        */
+        color: blue;
+        text-decoration: underline;
+}
+
+/* 已被访问的链接 */
+a:visited
+{
+        /*
+        color: #00FFFF;
+        background-color: #000000;
+        */
+        color: blue;
+        text-decoration: none;
+}
+
+
+
+/***************************************
+ * 类
+ ***************************************/
+.print
+{
+        color: red;
+        white-space: nowrap;
+        border-spacing: 10px 5px;
+}
+
+.notice
+{
+        text-align: center;
+}
+
+.warning
+{
+        color: red;
+        text-align: center;
+        /*
+        */
+}
+
+.red
+{
+        color: red;
+}
+
+.inline
+{
+        display: inline;
+}
+
+.little_block
+{
+        margin-right: 2em;
+}
+
+.description
+{
+        color: green;
+}
+
+.center
+{
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        white-space: nowrap;
+        width: 0px;
+}
+
+.clear
+{
+        clear: both;
+}
+
+.container_div
+{
+        /*
+        padding: 1%;
+        border-style: solid;
+        border-width: 1%;
+
+        background-color: white;
+        */
+}
+
+.normal_div
+{
+        background-color: white;
+}
+
+/***************************************
+ * 框架
+ ***************************************/
+#container
+{
+        /*
+        padding: 1%;
+        */
+        background-color: royalblue;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+
+#header
+{
+}
+
+#header_content
+{
+        border-style: solid;
+        border-width: 1px;
+        background-color: cyan;
+
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+}
+
+#side
+{
+        float: left;
+        width: 15%;
+}
+
+#side_nav
+{
+        /*
+        border-style: solid;
+        border-top-width: 1px;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+
+        min-height: 500px;
+        */
+
+        margin-left: 10px;
+        margin-right: 10px;
+
+        background-color: royalblue;
+}
+
+#main
+{
+        float: right;
+        width: 85%;
+}
+
+#main_content
+{
+        /*
+        border-style: solid;
+        border-top-width: 1px;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+
+        min-height: 500px;
+        */
+
+        margin-left: 10px;
+        margin-right: 10px;
+
+        background-color: royalblue;
+}
+
+#footer
+{
+}
+
+#footer_content
+{
+        border-style: solid;
+        border-width: 1px;
+
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        text-align: right;
+        background-color: cyan;
+}
+/***************************************
+ * 登录
+ ***************************************/
+#login
+{
+        /*
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+        */
+}
+
+/***************************************
+ * 文章首页
+ ***************************************/
+#welcome
+{
+        border-style: solid;
+        border-width: 1px;
+
+        min-height: 500px;
+
+        background-color: white;
+}
+
+#welcome h1
+{
+        text-align: center;
+        color: green;
+}
+
+#shi
+{
+        width: 80%;
+        margin-top: 5em;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.vertical_show
+{
+        float: left;
+
+        margin-left: 1em;
+        width: 1.5em;
+        font-size: 36px;
+        color: black;
+        word-wrap: break-word;
+}
+
+/***************************************
+ * 顶栏
+ ***************************************/
+#title
+{
+        float: left;
+}
+
+#log
+{
+        float: right;
+}
+/***************************************
+ * 侧边导航栏
+ ***************************************/
+#operation
+{
+        border-style: solid;
+        border-width: 1px;
+
+        margin-bottom: 10px;
+
+        background-color: white;
+}
+
+#class_list
+{
+        border-style: solid;
+        border-width: 1px;
+
+        margin-bottom: 10px;
+
+        background-color: white;
+}
+
+#archive
+{
+        border-style: solid;
+        border-width: 1px;
+
+        margin-bottom: 10px;
+
+        background-color: white;
+}
+
+#side_nav h1
+{
+        font-size: 16px;
+}
+
+
+#side_nav ul
+{
+        /*
+        list-style: none;
+        */
+        padding-left: 20px;
+}
+
+#side_nav li
+{
+        /*
+        */
+        margin-bottom: 5px;
+        font-size: 12px;
+}
+/***************************************
+ * 文章列表
+ ***************************************/
+#article_list
+{
+        border-style: solid;
+        border-width: 1px;
+
+        padding-left: 5px;
+        padding-right: 5px;
+
+        min-height: 500px;
+
+        background-color: white;
+}
+
+#class_name
+{
+        text-align: center;
+        /*
+        color: Royalblue;
+        */
+        font-size: 24px;
+}
+
+.article_entry
+{
+        margin-bottom:16px;
+        /*
+        border-bottom-style: dashed;
+        border-bottom-width: 1px;
+        */
+}
+
+.article_entry h2
+{
+        margin: 0px;
+        font-size: 16px;
+        font-weight: normal;
+}
+
+.article_entry_infomation
+{
+        font-size: 12px;
+}
+
+.article_entry_infomation a
+{
+        color: black;
+}
+/***************************************
+ * 文章展示
+ ***************************************/
+#article
+{
+        border-style: solid;
+        border-width: 1px;
+
+        margin-bottom: 10px;
+
+        padding-left: 5px;
+        padding-right: 5px;
+
+        min-height: 500px;
+
+        background-color: white;
+}
+
+#article_title
+{
+        text-align: center;
+        /*
+        color: royalblue;
+        */
+        font-size: 24px;
+}
+
+#infomation
+{
+        text-align: center;
+}
+
+#maintext
+{
+        /*
+        font-family: monospace;
+        wore-wrap: break-word;
+        white-space: pre-wrap;
+        */
+        font-size: 15px;
+        font-family: monospace;
+        word-break: break-all;
+
+        margin-bottom: 10px;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+
+#maintext h1
+{
+        /*
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        */
+}
+
+#maintext h2
+{
+        /*
+        margin-top: 0px;
+        margin-bottom: 0px;
+        */
+}
+
+#write_comment
+{
+        margin-bottom: 10px;
+
+        padding-left: 5px;
+        padding-right: 5px;
+
+        border-style: solid;
+        border-width: 1px;
+
+        background-color: white;
+}
+
+#write_comment h1
+{
+        font-size: 16px;
+}
+
+#write_comment table
+{
+        table-layout: auto;
+        width: 100%
+}
+
+#write_comment textarea
+{
+        width: 500px;
+        height: 100px;
+}
+
+#comment_list
+{
+        border-style: solid;
+        border-width: 1px;
+
+        margin-bottom: 10px;
+
+        padding-left: 5px;
+        padding-right: 5px;
+
+        background-color: white;
+}
+
+#comment_list h1
+{
+        font-size: 16px;
+}
+
+.comment_entry
+{
+        /*
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 1%;
+        padding-right: 1%;
+        */
+        border-style: solid;
+        border-width: 1px;
+
+        margin-bottom: 10px;
+}
+
+.comment_entry_header
+{
+        background-color: greenyellow;
+
+        padding-left: 5px;
+        padding-right: 5px;
+}
+
+.user
+{
+        font-family: monospace;
+        font-weight: bold;
+        color: red;
+
+        word-wrap: break-word;
+        word-break: break-all;
+}
+
+.floor
+{
+        font-family: monospace;
+        color: blue;
+
+        float: right;
+}
+
+.comment_content
+{
+        /*
+        padding: 5px;
+        white-space: pre-wrap;
+        */
+        font-size: 16px;
+
+        word-wrap: break-word;
+        word-break: break-all;
+
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+        padding-left: 5px;
+        padding-right: 5px;
+
+}
+
+.comment_entry_information
+{
+        /*
+        margin-bottom: 5px;
+        */
+        padding-left: 5px;
+        padding-right: 5px;
+
+}
+/***************************************
+ * 写文章
+ ***************************************/
+#write
+{
+        border-style: solid;
+        border-width: 1px;
+
+        padding-left: 5px;
+        padding-right: 5px;
+
+        min-height: 500px;
+
+        background-color: white;
+}
+
+#write h1
+{
+        font-size: 20px;
+        text-align: center;
+}
+
+#write_table
+{
+        table-layout: auto;
+        width: 100%;
+        /*
+        */
+}
+
+.td_left
+{
+        white-space: nowrap;
+        width: 0px;
+}
+
+.vertical_top
+{
+        vertical-align: top;
+}
+
+#write_title
+{
+        /*
+        border-width: 0px;
+        */
+        width: 95%;
+}
+
+#write_text
+{
+        /*
+        background-color: AliceBlue;
+        border-width: 0px;
+        */
+        width: 95%;
+        height: 300px;
+
+        word-break: break-all;
+
+        font-size: 14px;
+        font-family: monospace;
+}
+
+/***************************************
+ * 评论
+ ***************************************/
+#comment
+{
+        border-style: solid;
+        border-width: 1px;
+
+        padding-left: 5px;
+        padding-right: 5px;
+
+        min-height: 500px;
+
+        background-color: white;
+}
+/***************************************
+ * 添加文章
+ ***************************************/
+#add
+{
+        border-style: solid;
+        border-width: 1px;
+
+        padding-left: 5px;
+        padding-right: 5px;
+
+        min-height: 500px;
+
+        background-color: white;
+}
+/***************************************
+ * 更新文章
+ ***************************************/
+#update
+{
+        border-style: solid;
+        border-width: 1px;
+
+        padding-left: 5px;
+        padding-right: 5px;
+
+        min-height: 500px;
+
+        background-color: white;
+}
+
+/***************************************
+ * 删除文章确认
+ ***************************************/
+#delete_confirm
+{
+        border-style: solid;
+        border-width: 1px;
+
+        padding-left: 5px;
+        padding-right: 5px;
+
+        min-height: 500px;
+
+        background-color: white;
+}
+
+/***************************************
+ * 删除文章
+ ***************************************/
+#delete
+{
+        border-style: solid;
+        border-width: 1px;
+
+        padding-left: 5px;
+        padding-right: 5px;
+
+        min-height: 500px;
+
+        background-color: white;
+}
