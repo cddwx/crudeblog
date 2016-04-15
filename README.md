@@ -1,2 +1,2 @@
 # wcsblog
-A sample blog website based written in PHP.
+A sample blog website written in PHP.
