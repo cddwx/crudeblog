@@ -7,6 +7,6 @@ php_value date.timezone Asia/Shanghai
 RewriteEngine On
 RewriteCond %{REQUEST_METHOD} POST
 RewriteCond %{REQUEST_URI} .comment.php*
-RewriteCond %{HTTP_REFERER} !.*wcs.likesyou.org.* [OR]
+RewriteCond %{HTTP_REFERER} !.*xxxx.* [OR]
 RewriteCond %{HTTP_USER_AGENT} ^$
 RewriteRule (.*) ^http://%{REMOTE_ADDR}/$ [R=301,L]
