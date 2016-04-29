@@ -35,13 +35,8 @@ require($_SERVER['DOCUMENT_ROOT'] . '/include/side_admin.php');
                 <div id='main_content' class='normal_div'>
                     <div id='welcome'>
                        <div id='shi'>
-                            <div class='vertical_show'>xxxxx</div>
-                            <div class='vertical_show'>xx</div>
-                            <div class='vertical_show'>xxxxxxxx</div>
-                            <div class='vertical_show'>xxxxxxxx</div>
-                            <div class='vertical_show'>xxxxxxxx</div>
-                            <div class='vertical_show'>xxxxxxxx</div>
-
+                            <h3>crudeblog</h3>
+                            <p>A very simple and straightforward blog system written in PHP.</p>
                             <!--清除浮动-->
                             <div class='clear'></div>
                         </div>
