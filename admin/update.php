@@ -16,10 +16,8 @@ if ($_SESSION['authenticated'] != '1')
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="Content-Language" content="zh-cn" />
-
         <link rel="stylesheet" type="text/css" href="/css/1.css" />
-
-        <title>万重山-管理-更新</title>
+        <title>xxxx-管理-更新</title>
     </head>
     <body>
         <div id='container'>
@@ -44,10 +42,6 @@ if ($_POST['title'] == '' || ($_POST['class'] == 'select_class' && $_POST['new_c
 else
 {
     $item = str_replace("\r\n", "\n", $_POST['item']);
-    //echo 'hello';
-
-    //echo '[' . $_POST['class'] . ']';
-    //echo '[' . $_POST['new_class'] . ']';
 
     if ($_POST['new_class'] != '')
     {
@@ -65,8 +59,6 @@ else
         mysqli_real_escape_string($connection, $item),
         mysqli_real_escape_string($connection, $_POST['deadline']),
         mysqli_real_escape_string($connection, $_POST['id']));
-
-    //echo $class;
 
     $result = mysqli_query($connection, $sql);
     if ($result == FALSE)

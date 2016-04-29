@@ -10,10 +10,8 @@ session_start();
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="Content-Language" content="zh-cn" />
-
         <link rel="stylesheet" type="text/css" href="/css/1.css" />
-
-        <title>万重山-管理-登出</title>
+        <title>xxxx-管理-登出</title>
     </head>
     <body>
         <div class='notice'>

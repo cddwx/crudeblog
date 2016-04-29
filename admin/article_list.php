@@ -16,9 +16,7 @@ if ($_SESSION['authenticated'] != '1')
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="Content-Language" content="zh-cn" />
-
         <link rel="stylesheet" type="text/css" href="/css/1.css" />
-
 <?php
 if ($_GET['class'] != '')
 {
@@ -29,7 +27,7 @@ else
     $class = '全部';
 }
 ?>
-        <title>万重山-管理-文章列表-<?php echo $class; ?></title>
+        <title>xxxx-管理-文章列表-<?php echo $class; ?></title>
     </head>
     <body>
         <div id='container'>

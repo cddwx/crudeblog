@@ -18,9 +18,7 @@ unset($object);
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="Content-Language" content="zh-cn" />
-
         <link rel="stylesheet" type="text/css" href="/css/1.css" />
-
         <title>万重山-文章-<?php echo $title; ?></title>
     </head>
     <body>
@@ -57,8 +55,6 @@ $item = htmlspecialchars($item);
 
 // 纯文本格式，原样
 $item = str_replace(' ', '&nbsp;', $item);
-//$item = str_replace('<', '&lt;', $item);
-//$item = str_replace('>', '&gt;', $item);
 $item = str_replace(PHP_EOL, "<br />\n", $item);
 
 // 把"换行"或"回车"或"回车换行"之间的东西放进<p></p>中，但是有些时候间距太大，
@@ -92,7 +88,7 @@ unset($object);
         </div>
 
         <div id='write_comment'>
-            <h1>发表评论</h1>
+            <h1>发表评论(* 为必填项)</h1>
             <form action='comment.php' method='post' id=''>
                 <table>
                     <tr>
@@ -129,7 +125,6 @@ unset($object);
         <div id='comment_list'>
             <h1>评论列表</h1>
 <?php
-//echo 'hello';
 $sql = sprintf("SELECT `id`, `user`,  `date`, `time`, `content`
         FROM `comment`
         WHERE `article_id` = '%s'

@@ -13,7 +13,6 @@ if ($result == FALSE)
     exit();
 }
 $num_rows = mysqli_num_rows($result);
-//echo $num_rows;
 ?>
                 <li><a href="article_list.php">全部(<?php echo $num_rows; ?>)</a></li>
 <?php
@@ -21,7 +20,6 @@ $sql = 'SELECT DISTINCT `class` FROM `article` ORDER BY `class`';
 
 require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_result_array.php');
 
-//echo 'hello';
 $i = 1;
 $ii = count($object);
 for($i =1; $i <= $ii; $i = $i + 1)

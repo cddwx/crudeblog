@@ -6,7 +6,6 @@ require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_connect.php');
 $sql = sprintf("SELECT `title` FROM `article` WHERE `id` = '%s'",
         mysqli_real_escape_string($connection, $_POST['article_id']));
 
-//echo 'hello';
 require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_result_array.php');
 
 $id         = $object[1]['id'];
@@ -27,10 +26,8 @@ unset($object);
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="Content-Language" content="zh-cn" />
-
         <link rel="stylesheet" type="text/css" href="/css/1.css" />
-
-        <title>万重山-文章-<?php echo $title; ?>-评论</title>
+        <title>xxxx-文章-<?php echo $title; ?>-评论</title>
     </head>
     <body>
         <div id='container'>
@@ -48,8 +45,6 @@ require($_SERVER['DOCUMENT_ROOT'] . '/include/side.php');
 <div id='comment'>
     <div class='notice'>
 <?php
-//echo $_POST['user'];
-//echo $_POST['content'];
 if ($_POST['user'] == '' || $_POST['content'] == '' || $_POST['email'] == '')
 {
     echo "<p>填写不完整！</p>\n";

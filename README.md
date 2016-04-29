@@ -1,5 +1,5 @@
 # wcsblog
-A simple and straightforward blog system written in PHP.
+A very simple and straightforward blog system written in PHP.
 
 2016-04-22
 

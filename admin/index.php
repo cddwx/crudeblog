@@ -16,10 +16,8 @@ if ($_SESSION['authenticated'] != '1')
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="Content-Language" content="zh-cn" />
-
         <link rel="stylesheet" type="text/css" href="/css/1.css" />
-
-        <title>万重山-管理</title>
+        <title>xxxx-管理</title>
     </head>
     <body>
         <div id='container'>
@@ -36,14 +34,15 @@ require($_SERVER['DOCUMENT_ROOT'] . '/include/side_admin.php');
                 <div id='main_content' class='normal_div'>
                     <div id='welcome'>
                        <div id='shi'>
-                            <div class='vertical_show'>早发白帝城</div>
-                            <div class='vertical_show'>李白</div>
-                            <div class='vertical_show'>朝辞白帝彩云间，</div>
-                            <div class='vertical_show'>千里江陵一日还。</div>
-                            <div class='vertical_show'>两岸猿声啼不住，</div>
-                            <div class='vertical_show'>轻舟已过万重山。</div>
+                            <div class='vertical_show'>xxxxx</div>
+                            <div class='vertical_show'>xx</div>
+                            <div class='vertical_show'>xxxxxxxx</div>
+                            <div class='vertical_show'>xxxxxxxx</div>
+                            <div class='vertical_show'>xxxxxxxx</div>
+                            <div class='vertical_show'>xxxxxxxx</div>
+
                             <!--清除浮动-->
-<div class='clear'></div>
+                            <div class='clear'></div>
                         </div>
                     </div>
                 </div>

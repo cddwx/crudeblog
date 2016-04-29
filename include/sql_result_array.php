@@ -6,9 +6,6 @@ if ($result == FALSE)
     exit();
 }
 $num_fields = mysqli_num_fields($result);
-//echo $num_fields;
-
-//unset($object);
 
 $x = 1;
 $y = 1;
@@ -19,10 +16,7 @@ while($row = mysqli_fetch_assoc($result))
         $field_info = mysqli_fetch_field_direct($result, $y - 1);
         $name = $field_info->name;
         $object[$x][$name] = $row[$name];
-        //echo $y . ', ';
     }
     $x = $x + 1;
-    //echo $x . ', ';
-    //echo $object[$x]['class'] . ', ';
 }
 ?>

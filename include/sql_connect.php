@@ -19,7 +19,4 @@ if ($character_set == FALSE)
     echo "cannot set character_set";
     exit();
 }
-
-//$charset = mysqli_character_set_name($connection);
-//printf("Current character set is %s\n", $charset);
 ?>

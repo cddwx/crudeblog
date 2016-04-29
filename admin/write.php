@@ -16,10 +16,8 @@ if ($_SESSION['authenticated'] != '1')
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="Content-Language" content="zh-cn" />
-
         <link rel="stylesheet" type="text/css" href="/css/1.css" />
-
-        <title>万重山-管理-编辑文章</title>
+        <title>xxxx-管理-编辑文章</title>
     </head>
     <body>
         <div id='container'>
@@ -80,7 +78,7 @@ else
     <h1 id='page_title'>编辑文章</h1>
     <hr />
 
-    <p class="warning">如果添加失败，添加的信息就丢失了，请注意手动保存！或者在失败后使用浏览器返回</p>
+    <p class="warning">* 为必填项. 如果添加失败，添加的信息就丢失了，请注意手动保存！或者在失败后使用浏览器返回</p>
 
     <form action='<?php if ($id == ''){echo 'add.php';}else{echo 'update.php';} ?>' method='post'>
         <table id='write_table'>
@@ -108,7 +106,6 @@ $sql = 'SELECT DISTINCT `class` FROM `article` ORDER BY `class`';
 
 require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_result_array.php');
 
-//echo 'hello';
 $i = 1;
 $ii = count($object);
 for($i =1; $i <= $ii; $i = $i + 1)
