@@ -1,5 +1,5 @@
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_define.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/include/site_define.php');
 require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_connect.php');
 ?>
 <?php
@@ -28,7 +28,8 @@ unset($object);
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="Content-Language" content="zh-cn" />
         <link rel="stylesheet" type="text/css" href="/css/1.css" />
-        <title>xxxx-管理-文章-<?php echo $title; ?></title>
+
+        <title><?php echo BLOGNAME; ?>-管理-文章-<?php echo $title; ?></title>
     </head>
     <body>
         <div id='container'>
@@ -182,7 +183,6 @@ for($i =1; $i <= $ii; $i = $i + 1)
 
     echo "\t<div class='comment_entry_information'>\n";
     echo "\t\t<span class='description'>" . $date . " " . $time . "</span>\n";
-    echo "\t\t<span class=''><a href='.php?id=" . $id . "'>回复</a></span>\n";
     echo "\t</div>\n";
 
     echo "</div>\n";

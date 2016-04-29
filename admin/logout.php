@@ -1,5 +1,5 @@
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_define.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/include/site_define.php');
 require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_connect.php');
 ?>
 <?php 
@@ -11,7 +11,8 @@ session_start();
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="Content-Language" content="zh-cn" />
         <link rel="stylesheet" type="text/css" href="/css/1.css" />
-        <title>xxxx-管理-登出</title>
+
+        <title><?php echo BLOGNAME; ?>-管理-登出</title>
     </head>
     <body>
         <div class='notice'>

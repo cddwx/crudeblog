@@ -1,5 +1,5 @@
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_define.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/include/site_define.php');
 require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_connect.php');
 ?>
 <?php 
@@ -12,12 +12,15 @@ if ($_SESSION['authenticated'] == '1')
 }
 else
 {
-    if ($_POST['user'] == ADMIN && $_POST['password'] == ADMIN_PASS)
+    if (($_POST['user'] != '') && ($_POST['password'] != ''))
     {
-        $_SESSION['authenticated'] = '1';
+        if (($_POST['user'] == ADMIN) && ($_POST['password'] == ADMIN_PASS))
+        {
+            $_SESSION['authenticated'] = '1';
 
-        header("Location: index.php");
-        exit;
+            header("Location: index.php");
+            exit;
+        }
     }
 }
 ?>
@@ -27,7 +30,8 @@ else
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="Content-Language" content="zh-cn" />
         <link rel="stylesheet" type="text/css" href="/css/1.css" />
-        <title>xxxx-管理-登入</title>
+
+        <title><?php echo BLOGNAME; ?>-管理-登入</title>
     </head>
     <body>
 <?php

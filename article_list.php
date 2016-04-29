@@ -1,5 +1,5 @@
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_define.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/include/site_define.php');
 require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_connect.php');
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w4.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -7,6 +7,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_connect.php');
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="Content-Language" content="zh-cn" />
+
         <link rel="stylesheet" type="text/css" href="/css/1.css" />
 <?php
 if ($_GET['class'] != '')
@@ -18,7 +19,7 @@ else
     $class = '全部';
 }
 ?>
-        <title>xxxx-文章列表-<?php echo $class; ?></title>
+        <title><?php echo BLOGNAME; ?>-文章列表-<?php echo $class; ?></title>
     </head>
     <body>
         <div id='container'>
