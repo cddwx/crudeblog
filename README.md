@@ -4,7 +4,7 @@ A very simple and straightforward blog system written in PHP.
 ## 目录结构
 
     admin/
-     \_add.php
+     \_ add.php
      \_ article.php
      \_ article_list.php
      \_ comment.php
