@@ -30,6 +30,12 @@ A very simple and straightforward blog system written in PHP.
      \_ sql_connect.php
      \_ sql_result_array.php
 
+     .htaccess
+     article.php
+     article_list.php
+     comment.php
+     index.php
+
 ## 设置
 ###主要设置
 文件: include/site_define.php
