@@ -1,41 +1,6 @@
 # crudeblog
 A very simple and straightforward blog system written in PHP.
 
-## 目录结构
-
-    admin/
-     \_ add.php
-     \_ article.php
-     \_ article_list.php
-     \_ comment.php
-     \_ delete.php
-     \_ delete_confirm.php
-     \_ index.php
-     \_ login.php
-     \_ logout.php
-     \_ update.php
-     \_ write.php
-     
-    css/
-     \_ 1.css
-     
-    include/
-     \_ .htaccess
-     \_ footer.php
-     \_ header.php
-     \_ header_admin.php
-     \_ side.php
-     \_ side_admin.php
-     \_ site_define.php
-     \_ sql_connect.php
-     \_ sql_result_array.php
-
-     .htaccess
-     article.php
-     article_list.php
-     comment.php
-     index.php
-
 ## 设置
 ###主要设置
 文件: include/site_define.php
