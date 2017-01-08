@@ -13,15 +13,14 @@ if ($_SESSION['authenticated'] != '1')
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w4.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta http-equiv="Content-Language" content="zh-cn" />
-        <link rel="stylesheet" type="text/css" href="/css/1.css" />
-
-        <title><?php echo BLOGNAME; ?>-管理-编辑文章</title>
-    </head>
-    <body>
-        <div id='container'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+<link rel="stylesheet" type="text/css" href="/css/1.css" />
+<title><?php echo BLOGNAME; ?>-管理-编辑文章</title>
+</head>
+<body>
+<div id='container'>
 <?php
 require($_SERVER['DOCUMENT_ROOT'] . '/include/header_admin.php');
 ?>
@@ -31,8 +30,8 @@ require($_SERVER['DOCUMENT_ROOT'] . '/include/side_admin.php');
 ?>
 
 <!--主体开始-->
-            <div id='main' class='container_div'>
-                <div id='main_content' class='normal_div'>
+<div id='main' class='container_div'>
+<div id='main_content' class='normal_div'>
 <?php
 $sql = sprintf("SELECT * FROM `article` WHERE id='%s'",
         mysqli_real_escape_string($connection, $_GET['id']));
@@ -76,32 +75,32 @@ else
 }
 ?>
 <div id='write'>
-    <h1 id='page_title'>编辑文章</h1>
-    <hr />
+<h1 id='page_title'>编辑文章</h1>
+<hr />
 
-    <p class="warning">* 为必填项. 如果添加失败，添加的信息就丢失了，请注意手动保存！或者在失败后使用浏览器返回</p>
+<p class="warning">* 为必填项. 如果添加失败，添加的信息就丢失了，请注意手动保存！或者在失败后使用浏览器返回</p>
 
-    <form action='<?php if ($id == ''){echo 'add.php';}else{echo 'update.php';} ?>' method='post'>
-        <table id='write_table'>
-            <tr>
-                <td class="td_left">标题(*)：</td>
-                <td>
-                    <input type="text" name="title" value="<?php echo $title; ?>" id="write_title" />
-                </td>
-            </tr>
-            <tr>
-                <td class='td_left vertical_top'>正文：</td>
-                <td>
-                    <textarea name="item" id='write_text'><?php echo $item; ?></textarea>
-                </td>
-            </tr>
+<form action='<?php if ($id == ''){echo 'add.php';}else{echo 'update.php';} ?>' method='post'>
+<table id='write_table'>
+<tr>
+<td class="td_left">标题(*)：</td>
+<td>
+<input type="text" name="title" value="<?php echo $title; ?>" id="write_title" />
+</td>
+</tr>
+<tr>
+<td class='td_left vertical_top'>正文：</td>
+<td>
+<textarea name="item" id='write_text'><?php echo $item; ?></textarea>
+</td>
+</tr>
 
-            <tr>
-                <td class="td_left">分类(*)：</td>
-                <td>
-                    <select name='class'>
-                        <option value='select_class'>选择分类</option>
-                        <option value='separete_line' disabled='disabled'>----------------</option>
+<tr>
+<td class="td_left">分类(*)：</td>
+<td>
+<select name='class'>
+<option value='select_class'>选择分类</option>
+<option value='separete_line' disabled='disabled'>----------------</option>
 <?php
 $sql = 'SELECT DISTINCT `class` FROM `article` ORDER BY `class`';
 
@@ -125,27 +124,27 @@ for($i =1; $i <= $ii; $i = $i + 1)
 
 unset($object);
 ?>
-                    </select>
+</select>
 
-                    <span>添加分类</span>
-                    <input type='text' name='new_class' value='' />
-                </td>
-            </tr>
+<span>添加分类</span>
+<input type='text' name='new_class' value='' />
+</td>
+</tr>
 
-            <tr>
-                <td class="td_left">日期：</td>
-                <td><?php echo $date; ?></td>
-            </tr>
-            <tr>
-                <td class="td_left">截止日期：</td>
-                <td>
-                    <input type="text" name="deadline" value="<?php echo $deadline; ?>" />
-                </td>
-            </tr>
+<tr>
+<td class="td_left">日期：</td>
+<td><?php echo $date; ?></td>
+</tr>
+<tr>
+<td class="td_left">截止日期：</td>
+<td>
+<input type="text" name="deadline" value="<?php echo $deadline; ?>" />
+</td>
+</tr>
 
-            <tr>
-                <td class="td_left">完成情况：</td>
-                <td>
+<tr>
+<td class="td_left">完成情况：</td>
+<td>
 <?php 
 if ($done == '1')
 {
@@ -162,21 +161,21 @@ else
     echo "<input type='radio' name='done' id='no' value='0' checked='checked' />\n";
 }
 ?>
-                </td>
-            </tr>
+</td>
+</tr>
 
-            <tr>
-                <td class='td_left'></td>
-                <td>
-                    <input type="hidden" name="id" value="<?php echo $id; ?>" />
-                    <input type="submit" name="submit" value="保存" />
-                </td>
-            </tr>
-        </table>
-    </form >
+<tr>
+<td class='td_left'></td>
+<td>
+<input type="hidden" name="id" value="<?php echo $id; ?>" />
+<input type="submit" name="submit" value="保存" />
+</td>
+</tr>
+</table>
+</form >
 </div>
-                </div>
-            </div>
+</div>
+</div>
 <!--主体结束-->
 
 <!--清除浮动-->
@@ -185,6 +184,6 @@ else
 <?php
 require($_SERVER['DOCUMENT_ROOT'] . '/include/footer.php');
 ?>
-        </div>
-    </body>
+</div>
+</body>
 </html>

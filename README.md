@@ -1,4 +1,4 @@
-# crudeblog
+# 简介
 A very simple and straightforward blog system written in PHP.
 
 ## 设置
@@ -23,31 +23,4 @@ A very simple and straightforward blog system written in PHP.
 
 
 ## 数据库结构
-表 'article'
-
-    CREATE TABLE IF NOT EXISTS `article` (
-        `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-        `done` tinyint(1) DEFAULT NULL,
-        `class` tinyblob,
-        `title` tinyblob,
-        `item` blob,
-        `date` date DEFAULT NULL,
-        `time` time DEFAULT NULL,
-        `deadline` date DEFAULT NULL,
-        PRIMARY KEY (`id`)
-    ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ;
-
-表 'comment'
-
-    CREATE TABLE IF NOT EXISTS `comment` (
-        `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-        `parent_id` int(10) unsigned DEFAULT NULL,
-        `article_id` int(10) unsigned DEFAULT NULL,
-        `user` tinytext,
-        `email` tinytext,
-        `website` tinytext,
-        `date` date DEFAULT NULL,
-        `time` time DEFAULT NULL,
-        `content` text,
-        PRIMARY KEY (`id`)
-    ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ;
+参照 DATABASE.sql 文件

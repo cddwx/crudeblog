@@ -13,11 +13,10 @@ if ($_SESSION['authenticated'] != '1')
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w4.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta http-equiv="Content-Language" content="zh-cn" />
-        <link rel="stylesheet" type="text/css" href="/css/1.css" />
-
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+<link rel="stylesheet" type="text/css" href="/css/1.css" />
 <?php
 if ($_GET['class'] != '')
 {
@@ -28,10 +27,10 @@ else
     $class = '全部';
 }
 ?>
-        <title><?php echo BLOGNAME; ?>-管理-文章列表-<?php echo $class; ?></title>
-    </head>
-    <body>
-        <div id='container'>
+<title><?php echo BLOGNAME; ?>-管理-文章列表-<?php echo $class; ?></title>
+</head>
+<body>
+<div id='container'>
 <?php
 require($_SERVER['DOCUMENT_ROOT'] . '/include/header_admin.php');
 ?>
@@ -41,8 +40,8 @@ require($_SERVER['DOCUMENT_ROOT'] . '/include/side_admin.php');
 ?>
 
 <!--主体开始-->
-            <div id='main' class='container_div'>
-                <div id='main_content' class='normal_div'>
+<div id='main' class='container_div'>
+<div id='main_content' class='normal_div'>
 <?php
 if ($_GET['class'] != '')
 {
@@ -55,8 +54,8 @@ else
 ?>
 
 <div id='article_list'>
-    <h1 id='class_name'><?php echo $class; ?></h1>
-    <hr />
+<h1 id='class_name'><?php echo $class; ?></h1>
+<hr />
 
 <?php
 if ($_GET['class'] != '')
@@ -92,46 +91,46 @@ for($i =1; $i <= $ii; $i = $i + 1)
     $class      = htmlspecialchars($class);
 
     echo "<div class='article_entry'>\n";
-    echo "\t<h2><a href='article.php?id=" . $id . "'>" . $title . "</a></h2>\n";
-    echo "\t<div class='article_entry_infomation'>\n";
+    echo "<h2><a href='article.php?id=" . $id . "'>" . $title . "</a></h2>\n";
+    echo "<div class='article_entry_infomation'>\n";
 
-    echo "\t\t<span>完成:</span>\n";
+    echo "<span>完成:</span>\n";
     if ($done == '1')
     {
-        echo "\t\t<span class='description'>[" . $done . "]</span>\n";
+        echo "<span class='description'>[" . $done . "]</span>\n";
     }
     else
     {
-        echo "\t\t<span class='red'>[" . $done . "]</span>\n";
+        echo "<span class='red'>[" . $done . "]</span>\n";
     }
 
-    echo "\t\t<span>截止日期:</span>\n";
-    echo "\t\t<span class='description'>[" . $deadline . "]</span>\n";
+    echo "<span>截止日期:</span>\n";
+    echo "<span class='description'>[" . $deadline . "]</span>\n";
 
-    echo "\t\t<span>分类:</span>\n";
-    echo "\t\t<span class='description'>" . $class . "</span>\n";
+    echo "<span>分类:</span>\n";
+    echo "<span class='description'>" . $class . "</span>\n";
 
-    echo "\t\t<span>时间:</span>\n";
-    echo "\t\t<span class='description'>" . $date . " " . $time . "</span>\n";
+    echo "<span>时间:</span>\n";
+    echo "<span class='description'>" . $date . " " . $time . "</span>\n";
 
-    echo "\t\t<span>id:</span>\n";
-    echo "\t\t<span class='description'>" . $id . "</span>\n";
+    echo "<span>id:</span>\n";
+    echo "<span class='description'>" . $id . "</span>\n";
 
-    echo "\t\t<span><a href='export.php?id=" . $id . "'>导出</a></span>\n";
+    echo "<span><a href='export.php?id=" . $id . "'>导出</a></span>\n";
 
-    echo "\t\t<span><a href='write.php?id=" . $id . "'>编辑</a></span>\n";
+    echo "<span><a href='write.php?id=" . $id . "'>编辑</a></span>\n";
 
-    echo "\t\t<span><a href='delete_confirm.php?id=" . $id . "'>删除</a></span>\n";
+    echo "<span><a href='delete_confirm.php?id=" . $id . "'>删除</a></span>\n";
 
-    echo "\t</div>\n";
+    echo "</div>\n";
     echo "</div>\n";
 }
 
 unset($object);
 ?>
 </div>
-                </div>
-            </div>
+</div>
+</div>
 <!--主体结束-->
 
 <!--清除浮动-->
@@ -140,6 +139,6 @@ unset($object);
 <?php
 require($_SERVER['DOCUMENT_ROOT'] . '/include/footer.php');
 ?>
-        </div>
-    </body>
+</div>
+</body>
 </html>

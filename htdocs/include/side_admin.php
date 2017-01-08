@@ -1,9 +1,9 @@
 <!--侧边开始-->
 <div id='side' class='container_div'>
-    <div id='side_nav' class='normal_div'>
-        <div id='operation'>
-            <h1>操作</h1>
-            <ul>
+<div id='side_nav' class='normal_div'>
+<div id='operation'>
+<h1>操作</h1>
+<ul>
 <?php
 if ($_GET['class'] != '')
 {
@@ -14,12 +14,12 @@ else
     echo "<li><a href='write.php'>写文章</a></li>\n";
 }
 ?>
-            </ul>
-        </div>
+</ul>
+</div>
 
-        <div id='class_list'>
-            <h1>文章分类</h1>
-            <ul>
+<div id='class_list'>
+<h1>文章分类</h1>
+<ul>
 <?php
 $sql = 'SELECT `id` FROM `article`';
 $result = mysqli_query($connection, $sql);
@@ -30,7 +30,7 @@ if ($result == FALSE)
 }
 $num_rows = mysqli_num_rows($result);
 ?>
-        <li><a href="article_list.php">全部(<?php echo $num_rows; ?>)</a></li>
+<li><a href="article_list.php">全部(<?php echo $num_rows; ?>)</a></li>
 <?php
 $sql = 'SELECT DISTINCT `class` FROM `article` ORDER BY `class`';
 
@@ -59,9 +59,8 @@ for($i =1; $i <= $ii; $i = $i + 1)
 unset($object);
 unset($class);
 ?>
-            </ul>
-        </div>
-
-    </div>
+</ul>
+</div>
+</div>
 </div>
 <!--侧边结束-->
