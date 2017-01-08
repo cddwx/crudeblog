@@ -1,5 +1,5 @@
 --
--- 表的结构 `article`
+-- `article`
 --
 
 CREATE TABLE IF NOT EXISTS `article` (
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `article` (
 
 
 --
--- 表的结构 `comment`
+-- `comment`
 --
 
 CREATE TABLE IF NOT EXISTS `comment` (

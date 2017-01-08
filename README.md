@@ -1,26 +1,26 @@
-# 简介
-A very simple and straightforward blog system written in PHP.
+# Intorduction
+A very simple blog system written in raw PHP, just for learning use.
 
-## 设置
-###主要设置
-文件: include/site_define.php
+## Setting
+### Main setting
+File: include/site_define.php
 
-    // 数据库信息
+    // Database
     define('HOST', '');
     define('USER', '');
     define('PASSWORD', '');
     define('DB', '');
 
-    // 博客名, 默认为 'crudeblog'
+    // Blog name, default is 'crudeblog'
     define('BLOGNAME', 'crudeblog');
 
-    // 管理员帐号和密码, 不能使用空用户名或密码
+    // User name and password,
     define('ADMIN', '');
     define('ADMIN_PASS', '');
 
-### 自定义页脚
+### Footer file
 文件: include/footer.php
 
 
-## 数据库结构
-参照 DATABASE.sql 文件
+## Data structure
+READ DATABASE.sql file.
