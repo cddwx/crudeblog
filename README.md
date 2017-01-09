@@ -3,7 +3,7 @@ A very simple blog system written in raw PHP, just for learning use.
 
 ## Setting
 ### Main setting
-File: include/site_define.php
+include/site_define.php
 
     // Database
     define('HOST', '');
@@ -14,13 +14,13 @@ File: include/site_define.php
     // Blog name, default is 'crudeblog'
     define('BLOGNAME', 'crudeblog');
 
-    // User name and password,
+    // User name and password
     define('ADMIN', '');
     define('ADMIN_PASS', '');
 
 ### Footer file
-文件: include/footer.php
+include/footer.php
 
 
 ## Data structure
-READ DATABASE.sql file.
+Read DATABASE.sql file.
