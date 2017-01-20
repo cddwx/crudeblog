@@ -1,5 +1,5 @@
 # Intorduction
-A very simple blog system written in raw PHP, just for learning use.
+A simple blog system written in raw PHP, just for learning use.
 
 ## Setting
 ### Main setting
