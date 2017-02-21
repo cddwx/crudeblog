@@ -1,7 +1,9 @@
-# Intorduction
+# Description
 A simple blog system written in raw PHP, just for learning use.
 
-## Setting
+![crudeblog screenshot](crudeblog.png)
+
+# Setting
 ### Main setting
 include/site_define.php
 
@@ -22,5 +24,5 @@ include/site_define.php
 include/footer.php
 
 
-## Data structure
+# Data structure
 Read DATABASE.sql file.
