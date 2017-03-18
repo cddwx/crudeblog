@@ -60,16 +60,20 @@ $deadline   = $object[1]['deadline'];
 
 $title      = htmlspecialchars($title);
 $class      = htmlspecialchars($class);
-$item       = htmlspecialchars($item);
+//$item       = htmlspecialchars($item);
 
 // 纯文本格式，原样
-$item = str_replace(' ', '&nbsp;', $item);
-$item = str_replace(PHP_EOL, "<br />\n", $item);
+//$item = str_replace(' ', '&nbsp;', $item);
+//$item = str_replace(PHP_EOL, "<br />\n", $item);
 
 // 把"换行"或"回车"或"回车换行"之间的东西放进<p></p>中，但是有些时候间距太大，
 // 如代码中。
 //$item = str_replace(PHP_EOL, "\n</p>\n<p>\n", $item);
 //$item = "<p>\n" . "$item" . "\n</p>";
+
+// PHP Markdown, conver markdown text to html
+require_once("../Michelf/MarkdownExtra.inc.php");
+$item = \Michelf\MarkdownExtra::defaultTransform($item);
 
 unset($object);
 ?>
