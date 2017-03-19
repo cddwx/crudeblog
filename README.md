@@ -13,9 +13,9 @@ A simple blog system written in raw PHP, just for learning use.
 * anoymous comment to a article
 * admin user log in, log out
 * write and add article, with category
-* write article in pure text, then replace strings for store
 * edit and update previous article
 * delte article
+* markdown convert(store in markdown, convert to html when dispaly)
 
 ## Undone
 
@@ -23,7 +23,6 @@ A simple blog system written in raw PHP, just for learning use.
 * export article as text
 * batch operation with article
 * delete comment
-* markdown convert
 * add keywords and description to article
 * add picture function article 
 * change query string to ascii
