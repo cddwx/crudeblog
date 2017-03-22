@@ -1,12 +1,12 @@
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/site_define.php');
-require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_connect.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/site_define.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/include/sql_connect.php";
 ?>
 <?php
 $sql = sprintf("SELECT `title` FROM `article` WHERE `id` = '%s'",
         mysqli_real_escape_string($connection, $_POST['article_id']));
 
-require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_result_array.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/sql_result_array.php";
 
 $id         = $object[1]['id'];
 $done       = $object[1]['done'];
@@ -32,11 +32,11 @@ unset($object);
 <body>
 <div id='container'>
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/header.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";
 ?>
 
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/side.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/side.php";
 ?>
 
 <!--主体开始-->
@@ -95,7 +95,7 @@ else
 <div class='clear'></div>
 
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/footer.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php";
 ?>
 </div>
 </body>

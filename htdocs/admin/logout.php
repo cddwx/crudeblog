@@ -1,6 +1,6 @@
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/site_define.php');
-require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_connect.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/site_define.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/include/sql_connect.php";
 ?>
 <?php 
 session_start();

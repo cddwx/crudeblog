@@ -1,6 +1,6 @@
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/site_define.php');
-require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_connect.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/site_define.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/include/sql_connect.php";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w4.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -13,11 +13,11 @@ require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_connect.php');
 <body>
 <div id='container'>
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/header.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";
 ?>
 
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/side.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/side.php";
 ?>
 
 <!--主体开始-->
@@ -39,7 +39,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/include/side.php');
 <div class='clear'></div>
 
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/footer.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php";
 ?>
 </div>
 </body>

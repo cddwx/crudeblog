@@ -1,6 +1,6 @@
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/site_define.php');
-require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_connect.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/site_define.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/include/sql_connect.php";
 ?>
 <?php
 session_start();
@@ -22,11 +22,11 @@ if ($_SESSION['authenticated'] != '1')
 <body>
 <div id='container'>
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/header_admin.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/header_admin.php";
 ?>
 
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/side_admin.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/side_admin.php";
 ?>
 
 <!--主体开始-->
@@ -92,7 +92,7 @@ else
 <div class='clear'></div>
 
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/footer.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php";
 ?>
 </div>
 </body>

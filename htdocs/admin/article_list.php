@@ -1,6 +1,6 @@
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/site_define.php');
-require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_connect.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/site_define.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/include/sql_connect.php";
 ?>
 <?php
 session_start();
@@ -32,11 +32,11 @@ else
 <body>
 <div id='container'>
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/header_admin.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/header_admin.php";
 ?>
 
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/side_admin.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/side_admin.php";
 ?>
 
 <!--主体开始-->
@@ -72,7 +72,7 @@ else
             FROM `article` ORDER BY `date` DESC, `time` DESC';
 }
 
-require($_SERVER['DOCUMENT_ROOT'] . '/include/sql_result_array.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/sql_result_array.php";
 
 $i = 1;
 $ii = count($object);
@@ -137,7 +137,7 @@ unset($object);
 <div class='clear'></div>
 
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/include/footer.php');
+require $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php";
 ?>
 </div>
 </body>
