@@ -1,30 +1,33 @@
 # Description
+
 A simple blog system written in raw PHP, just for learning use.
 
 ![crudeblog screenshot](crudeblog.png)
 
 # Stautus
+
 ## Done
+
 * single article and its comment display
 * article list display
     * whole list
     * list by category
-* categories are always display in sidepanel
+* categories are always displayed in sidepanel
 * anoymous comment to a article
 * admin user log in, log out
-* write and add article, with category
+* write and add article with category
 * edit and update previous article
-* delte article
-* markdown convert(store in markdown, convert to html when dispaly)
+* delete article
+* markdown convert(store in markdown, convert to html when dispalying)
 
 ## Undone
 
-* head meta imfomations display
+* head meta information display
 * export article as text
-* batch operation with article
+* batch operation with articles
 * delete comment
 * add keywords and description to article
-* add picture function article 
+* add picture in article 
 * change query string to ascii
 
 # Program structure
@@ -60,14 +63,18 @@ TODO: explain the files.
     index.php
 
 # Quick start
+
 ## Put files
-Put all files in 'htdocs' directory in your website root document directory.
+
+Put all files in `htdocs` directory in your website root document directory.
 
 ## Create database
-See file 'DATABASE.sql' in git root directory and create a database with any name.
+
+Create a database, then create tables according `DATABASE.sql` in git root directory.
 
 ## Set variables
-Edit file 'include/site_define.php'
+
+Edit file `include/site_define.php`
 
     // Database
     define('HOST', '');
@@ -83,4 +90,5 @@ Edit file 'include/site_define.php'
     define('ADMIN_PASS', '');
 
 ## Use
+
 Use web browser visit your site, the index page for guset is display.
